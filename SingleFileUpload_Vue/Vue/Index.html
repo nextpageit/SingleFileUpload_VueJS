@@ -1,0 +1,71 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*body {
+            font-family: '微软雅黑';
+        }*/
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #app {
+            text-align: center;
+        }
+
+        .item {
+            position: relative;
+            width: 100px;
+            height: 40px;
+            margin: 150px auto;
+        }
+
+        .btn {
+            display: block;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #eee;
+            cursor: pointer;
+        }
+
+        .wrap {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+
+        <div class="item">
+            <!--<a class="btn" @click="toggleShow2">Upload</a>-->
+            <my-upload url="https://httpbin.org/post"
+                       lang-type="en"
+                       only-single="true"
+                       value="show2"
+                       field="img"
+                       key="0"
+                       max-size="2048"
+                       only-img="true"
+                       params="otherParams"></my-upload>
+        </div>
+    </div>
+    <script src="../Single/demo-src.js"></script>
+    
+
+</body>
+
+</html>
